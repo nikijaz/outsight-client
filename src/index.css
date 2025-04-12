@@ -1,0 +1,77 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+.orange {
+    --background: oklch(95.38% 0.0357 72.89);
+    --main: oklch(72.27% 0.1894 50.19);
+}
+
+.teal {
+    --background: oklch(95.08% 0.0481 184.07);
+    --main: oklch(78.57% 0.1422 180.36);
+}
+
+.pink {
+    --background: oklch(95.16% 0.0242 343.23);
+    --main: oklch(71.5% 0.197 354.23);
+}
+
+.indigo {
+    --background: oklch(92.13% 0.0388 282.36);
+    --main: oklch(66.34% 0.1806 277.2);
+}
+
+.lime {
+    --background: oklch(95.37% 0.0549 125.19);
+    --main: oklch(83.29% 0.2331 132.51);
+}
+
+.purple {
+    --background: oklch(94.11% 0.036556 308.0303);
+    --main: oklch(71.9% 0.198 310.03);
+}
+
+.yellow {
+    --background: oklch(95.37% 0.0549 125.19);
+    --main: oklch(83.29% 0.2331 132.51);
+}
+
+.red {
+    --background: oklch(93.3% 0.0339 17.77);
+    --main: oklch(67.28% 0.2147 24.22);
+}
+
+.blue {
+    --background: oklch(93.46% 0.0305 255.11);
+    --main: oklch(67.47% 0.1726 259.49);
+}
+
+:root {
+    --secondary-background: oklch(100% 0 0);
+    --foreground: oklch(0% 0 0);
+    --main-foreground: oklch(0% 0 0);
+    --border: oklch(0% 0 0);
+    --ring: oklch(0% 0 0);
+    --overlay: oklch(0% 0 0 / 0.8);
+    --shadow: 4px 4px 0px 0px var(--border);
+}
+
+@theme inline {
+    --color-main: var(--main);
+    --color-background: var(--background);
+    --color-secondary-background: var(--secondary-background);
+    --color-foreground: var(--foreground);
+    --color-main-foreground: var(--main-foreground);
+    --color-border: var(--border);
+    --color-overlay: var(--overlay);
+    --color-ring: var(--ring);
+
+    --spacing-boxShadowX: 4px;
+    --spacing-boxShadowY: 4px;
+    --spacing-reverseBoxShadowX: -4px;
+    --spacing-reverseBoxShadowY: -4px;
+    --radius-base: 0px;
+    --shadow-shadow: var(--shadow);
+    --font-weight-base: 500;
+    --font-weight-heading: 900;
+}
