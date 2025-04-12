@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@custom-variant dark (&:is(.dark *));
+
 .orange {
     --background: oklch(95.38% 0.0357 72.89);
     --main: oklch(72.27% 0.1894 50.19);
@@ -32,8 +34,8 @@
 }
 
 .yellow {
-    --background: oklch(95.37% 0.0549 125.19);
-    --main: oklch(83.29% 0.2331 132.51);
+    --background: oklch(96.79% 0.0654 102.26);
+    --main: oklch(86.03% 0.176 92.36);
 }
 
 .red {
@@ -53,7 +55,7 @@
     --border: oklch(0% 0 0);
     --ring: oklch(0% 0 0);
     --overlay: oklch(0% 0 0 / 0.8);
-    --shadow: 4px 4px 0px 0px var(--border);
+    --shadow: 8px 8px 0px 0px var(--border);
 }
 
 @theme inline {
@@ -74,4 +76,36 @@
     --shadow-shadow: var(--shadow);
     --font-weight-base: 500;
     --font-weight-heading: 900;
+    --animate-marquee: marquee var(--duration) infinite linear;
+    --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
+
+    @keyframes marquee {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(calc(-100% - var(--gap)));
+        }
+    }
+
+    @keyframes marquee-vertical {
+        from {
+            transform: translateY(0);
+        }
+
+        to {
+            transform: translateY(calc(-100% - var(--gap)));
+        }
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border outline-ring/50;
+    }
+
+    body {
+        @apply bg-background text-foreground;
+    }
 }
