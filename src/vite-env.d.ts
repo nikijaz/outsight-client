@@ -1,7 +1,15 @@
 /// <reference types="vite/client" />
 
-interface Emotion {
-  name: string;
+interface BaseEmotion {
+  id: string;
   color: string;
+  title: string;
   feel: string;
+}
+
+interface Emotion {
+  id: number;
+  title: string;
+  message: string;
+  likes: number;
 }

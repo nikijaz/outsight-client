@@ -1,62 +1,58 @@
-export const EMOTION_LIST: Emotion[] = [
+export const BASE_EMOTION_LIST: BaseEmotion[] = [
   {
-    name: 'Anxiety',
+    id: 'anxiety',
     color: 'orange',
+    title: 'Anxiety',
     feel: 'anxious',
   },
   {
-    name: 'Envy',
+    id: 'envy',
     color: 'teal',
+    title: 'Envy',
     feel: 'envious',
   },
   {
-    name: 'Embarrassment',
+    id: 'embarrassment',
     color: 'pink',
+    title: 'Embarrassment',
     feel: 'embarrassed',
   },
   {
-    name: 'Boredom',
+    id: 'boredom',
     color: 'indigo',
+    title: 'Boredom',
     feel: 'bored',
   },
   {
-    name: 'Disgust',
+    id: 'disgust',
     color: 'lime',
+    title: 'Disgust',
     feel: 'disgusted',
   },
   {
-    name: 'Nostalgia',
+    id: 'nostalgia',
     color: 'purple',
+    title: 'Nostalgia',
     feel: 'nostalgic',
   },
   {
-    name: 'Happiness',
+    id: 'happiness',
     color: 'yellow',
+    title: 'Happiness',
     feel: 'happy',
   },
   {
-    name: 'Anger',
+    id: 'anger',
     color: 'red',
+    title: 'Anger',
     feel: 'angry',
   },
   {
-    name: 'Sadness',
+    id: 'sadness',
     color: 'blue',
+    title: 'Sadness',
     feel: 'sad',
   },
 ];
 
 export const EMOJI_LIST: string[] = [':)', ':(', ':D', ':o', ':-)', ':-(', ':-D', ':-o', ':-p', ';-)', ':-|', ':-S', ':\'-(', 'xD'];
-
-export const EMOTIONS: string[] = [
-  'Today I feel happy because I got a promotion at work.',
-  'I am feeling sad because my friend moved away.',
-  'I feel angry because someone cut me off in traffic.',
-  'I am feeling anxious about an upcoming exam.',
-  'I feel bored because I have nothing to do.',
-  'I feel embarrassed because I tripped in public.',
-  'I am feeling envious of my friend\'s new car.',
-  'I feel afraid because I watched a scary movie.',
-  'I am feeling overwhelmed by all the work I have to do.',
-  'I feel relieved because I finished a big project.',
-];
